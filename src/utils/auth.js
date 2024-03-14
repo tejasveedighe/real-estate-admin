@@ -20,6 +20,13 @@ export function getUserData() {
       userRole,
     };
   } catch (error) {
-    return {}
+    return {};
   }
 }
+export const handleSignOut = () => {
+  Cookies.remove("userToken");
+  Cookies.remove("userId");
+  Cookies.remove("userName");
+  Cookies.remove("userEmail");
+  window.location.reload();
+};

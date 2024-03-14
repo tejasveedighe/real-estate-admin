@@ -1,21 +1,13 @@
 import classNames from "classnames";
-import Cookies from "js-cookie";
-import React, { useCallback } from "react";
+import React from "react";
 import { Button, Dropdown } from "react-bootstrap";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { getUserData, isLoggedIn } from "../../utils/auth";
 import styles from "./Header.module.css";
+import { handleSignOut } from "../../utils/auth";
 
 function Header() {
-  const handleSignOut = useCallback(() => {
-    Cookies.remove("userToken");
-    Cookies.remove("userId");
-    Cookies.remove("userName");
-    Cookies.remove("userEmail");
-    window.location.reload();
-  }, []);
-
   const { userRole: role } = getUserData();
   return (
     <nav

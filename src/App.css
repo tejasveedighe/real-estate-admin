@@ -26,4 +26,5 @@ tr:nth-child(even) {
 
 main {
   min-height: 500px;
+  width: 100%;
 }

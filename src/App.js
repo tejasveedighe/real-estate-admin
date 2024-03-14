@@ -5,7 +5,6 @@ import AdminRoutes from "./components/ProtectedRoutes/AdminRoutes";
 import About from "./pages/About/About";
 import AddProperty from "./pages/AddProperty/AddProperty";
 import AllProperty from "./pages/AllProperty/AllProperty";
-import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import ManageUser from "./pages/ManageUser/ManageUsers";
 import Property from "./pages/Property/Property";
@@ -13,18 +12,18 @@ import Requests from "./pages/Requests/Requests";
 import SignUp from "./pages/SignUp/SignUp";
 import User from "./pages/User/User";
 
+import React, { Component } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LogOutNav from "./components/LogOutNav/LogOutNav";
-import MyProperties from "./pages/MyProperties/MyProperties";
-import SellerRoutes from "./components/ProtectedRoutes/SellerRoutes";
-import Offers from "./pages/Offers/Offers";
 import AuthRoutes from "./components/ProtectedRoutes/AuthRoutes";
+import SellerRoutes from "./components/ProtectedRoutes/SellerRoutes";
+import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
+import MyProperties from "./pages/MyProperties/MyProperties";
+import NotFound from "./pages/NotFound/NotFound";
+import Offers from "./pages/Offers/Offers";
 import Owned from "./pages/Owned/Owned";
 import Payments from "./pages/Payments/Payments";
-import React, { Component } from "react";
-import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
-import NotFound from "./pages/NotFound/NotFound";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -81,30 +80,19 @@ function App() {
           </Route>
 
           <Route element={<LayoutWithNav />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/property" element={<AllProperty />} />
-            <Route path="/property/:propertyId" element={<Property />} />
-            <Route path="/about" element={<About />} />
-
             {/* Auth Routes */}
             <Route element={<AuthRoutes />}>
-              {/* Common to all authenticated users */}
-              <Route path="/offers" element={<Offers />} />
-              <Route path="/owned" element={<Owned />} />
-
               {/* Admin Routes */}
               <Route element={<AdminRoutes />}>
-                <Route path="/adminDashboard" element={<AdminDashboard />} />
+                <Route path="/offers" element={<Offers />} />
+                <Route path="/owned" element={<Owned />} />
+                <Route path="/" element={<AdminDashboard />} />
                 <Route path="/requests" element={<Requests />} />
                 <Route path="/manageUsers" element={<ManageUser />} />
                 <Route path="/user/:userId" element={<User />} />
                 <Route path="/payments" element={<Payments />} />
-              </Route>
-
-              {/* Seller Routes */}
-              <Route element={<SellerRoutes />}>
-                <Route path="/myProperties" element={<MyProperties />} />
-                <Route path="/addProperty" element={<AddProperty />} />
+                <Route path="/property" element={<AllProperty />} />
+                <Route path="/property/:propertyId" element={<Property />} />
               </Route>
             </Route>
 

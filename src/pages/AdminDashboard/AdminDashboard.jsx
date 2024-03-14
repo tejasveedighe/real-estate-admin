@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function AdminDashboard() {
   return (
-    <main className="text-center mt-5">
+    <main className="text-center">
       <h1>Dashboard</h1>
     </main>
   );

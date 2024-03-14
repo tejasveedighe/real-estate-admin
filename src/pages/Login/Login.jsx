@@ -84,7 +84,7 @@ function Login() {
                   onClick={() => setEmailCheck((prev) => !prev)}
                 />
               )}
-              <span>&nbsp;Login</span>
+              <span>&nbsp;Admin Login</span>
             </h5>
             <div className="w-100 d-flex flex-column gap-4">
               <FloatingLabel

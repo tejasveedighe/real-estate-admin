@@ -8,11 +8,11 @@ function AuthRoutes() {
     const { userRole: role } = getUserData();
     if (!role) {
       toast.error("Login to continue");
-      return <Navigate to="/" />;
+      return <Navigate to="/login" />;
     }
   } catch (error) {
     toast.error(`Unable to authroize: ${error.message}`);
-    return <Navigate to="/" />;
+    return <Navigate to="/login" />;
   }
   return <Outlet />;
 }
