@@ -1,0 +1,25 @@
+.availablePropertyBanner {
+  background-image: url("https://preview.colorlib.com/theme/konato/assets/img/hero/h2_hero1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+
+  .bannerTextContainer {
+    color: white;
+    h1 {
+      font-weight: 700;
+    }
+    .bannerText {
+      font-weight: 600;
+      width: 500px;
+    }
+  }
+}
+
+.propertyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+}

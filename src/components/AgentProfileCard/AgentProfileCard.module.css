@@ -1,0 +1,8 @@
+.agentCard {
+  gap: 19px;
+
+  .agentName:hover {
+    color: #00a0eb;
+    cursor: pointer;
+  }
+}

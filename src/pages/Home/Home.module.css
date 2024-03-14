@@ -1,0 +1,96 @@
+.imageSection {
+  background-image: url("https://preview.colorlib.com/theme/konato/assets/img/hero/h1_hero1.jpg");
+  height: 690px;
+
+  .searchProperty {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    span {
+      font-weight: bolder;
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+  .searchContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .searchInput {
+      width: 30%;
+    }
+    button {
+      border-radius: 20px;
+      background-color: var(--lightBlue);
+      border: 0px;
+    }
+  }
+}
+
+.helpPeopleSection {
+  margin-top: 150px;
+  background-image: url("https://preview.colorlib.com/theme/konato/assets/img/gallery/section-bg1.jpg");
+  height: 550px;
+  color: white;
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gridContainer > div {
+    display: flex;
+    background-color: #00a0eb;
+    box-shadow: 0px 10px 16px rgba(84, 0, 0, 0.06);
+    width: 330px;
+    height: 305px;
+    word-wrap: break-word;
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 300;
+      margin: 0px 20px;
+    }
+  }
+}
+
+.exploreSection {
+  background-color: #f2f4f8;
+  padding: 80px 0 80px 0;
+
+  .propertySide {
+    width: 415px;
+    height: 250px;
+  }
+
+  .viewAllPropertyButton {
+    background: var(--lightBlue);
+    border: 1px solid var(--lightBlue);
+    padding: 10px;
+  }
+
+  .propertyTypeContainer {
+    padding: 40px 20px 35px 20px;
+    background: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 220px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .propertyTypeContainer:hover {
+    a {
+      text-decoration: underline;
+    }
+  }
+}

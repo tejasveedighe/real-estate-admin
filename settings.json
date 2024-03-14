@@ -1,0 +1,106 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
+  "editor.fontWeight": "400",
+  "editor.cursorWidth": 3,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.console.fontSize": 17,
+  "terminal.integrated.fontSize": 17,
+  "explorer.confirmDelete": false,
+  "editor.lineNumbers": "relative",
+  "git.autofetch": true,
+  "prettier.useTabs": true,
+  "editor.wordWrap": "on",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ff0000"
+  },
+  "editor.inlineSuggest.enabled": true,
+
+  "emmet.showAbbreviationSuggestions": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "gitlens.hovers.currentLine.over": "line",
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "editor.accessibilitySupport": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.graph.showRemoteNames": true,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "editor.formatOnSaveMode": "modifications",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "css.format.enable": false,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "editor.minimap.autohide": true,
+  "editor.minimap.scale": 2,
+  "editor.minimap.renderCharacters": false,
+  "workbench.editor.empty.hint": "hidden",
+  "terminal.integrated.env.windows": {},
+  "console-ninja.featureSet": "Community",
+  "errorLens.enabledDiagnosticLevels": ["warning", "info", "error", "hint"],
+  "githubPullRequests.pullBranch": "never",
+  "errorLens.decorations": {
+    "errorRange": {},
+    "warningRange": {},
+    "infoRange": {},
+    "hintRange": {}
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.autoSave": "onFocusChange",
+  "errorLens.enabled": true,
+  "biome.requireConfiguration": false,
+  "biome.lspBin": "",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.linux": {},
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "GitHub Dark"
+}

@@ -1,0 +1,28 @@
+.aboutUsBanner {
+  background-image: url("https://preview.colorlib.com/theme/konato/assets/img/hero/h2_hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+
+  .bannerTextContainer {
+    color: white;
+    h1 {
+      font-weight: 700;
+    }
+    .bannerText {
+      font-weight: 600;
+      width: 500px;
+    }
+  }
+}
+
+.rightImg {
+  width: 50%;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://preview.colorlib.com/theme/konato/assets/img/gallery/about1.jpg");
+}

@@ -1,0 +1,9 @@
+.agentSection {
+  height: 600px;
+
+  .agentCarousel {
+    margin-top: 20px;
+  }
+  .agentCardContainer {
+  }
+}

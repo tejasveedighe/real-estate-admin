@@ -1,0 +1,71 @@
+.image {
+  height: 170px;
+  object-fit: fill;
+  object-position: center;
+  image-rendering: optimizeSpeed;
+  transition: transform 0.3s;
+}
+
+.title {
+  max-width: 100%;
+  max-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  width: 300px;
+  height: 320px;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  &:hover .buttonContainer {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  &:hover .image {
+    transform: scale(1.1);
+  }
+  .propertyInfo {
+    display: flex;
+    align-items: first baseline;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .propertyLocation,
+    .propertyArea {
+      margin-top: 5px;
+      display: inline-flex;
+      align-items: first baseline;
+      justify-content: flex-start;
+      gap: 5px;
+    }
+  }
+  .buttonContainer {
+    transition: transform 0.3s;
+    transform: translateY(150%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      background-color: var(--lightBlue);
+      padding: 3px 15px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      float: right;
+    }
+
+    .deleteBtn {
+      background-color: red;
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}
