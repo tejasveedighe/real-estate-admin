@@ -1,0 +1,30 @@
+.featuresContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  .feature {
+    color: #3f4143;
+    background-color: white;
+    border: 1px solid #75797c;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    .featureHeadings {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      .featureHeading {
+        font-size: 25px;
+      }
+    }
+    .featureBody {
+      margin-top: 20px;
+      .featureNumber {
+        font-size: 50px;
+        text-align: start;
+      }
+    }
+  }
+}
